@@ -25,4 +25,8 @@ export class ClientService {
     return this.client = this.af.object('/clients/' + id) as FirebaseObjectObservable<Client>;
   }
 
+  updateClient(id: string, client: Client) {
+    return this.clients.update(id, client);
+  }
+
 }
