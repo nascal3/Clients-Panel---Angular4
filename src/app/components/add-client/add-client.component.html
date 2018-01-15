@@ -16,7 +16,7 @@
       <div class="form-group">
         <label for="firstName">First Name</label>
         <input type="text" class="form-control" [(ngModel)]="client.firstName" name="firstName"
-         #clientFirstName="ngModel" minlength="2" required="">
+         #clientFirstName="ngModel" minlength="2" required>
         <span *ngIf="clientFirstName.errors?.required && clientFirstName.touched" class="alert alert-danger">
           First name is required!
         </span>

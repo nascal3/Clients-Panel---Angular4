@@ -22,7 +22,7 @@ export class ClientService {
   }
 
   getClient(id: string) {
-    return this.client = this.af.object('/clients/' + id) as FirebaseObjectObservable<Client>;
+    return this.client = this.af.object(`/clients/${id}`) as FirebaseObjectObservable<Client>;
   }
 
   updateClient(id: string, client: Client) {
